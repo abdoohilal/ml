@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>السيارات والحجز - مكتب تأجير السيارات</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <!-- شريط التنقل المشترك -->
+    <div id="nav-bar">
+        <a href="home.html">الرئيسية</a> |
+        <a href="AboutUs.html">من نحن</a> |
+        <a href="cars.html">السيارات والحجز</a>
+    </div>
+
+    <h1>قائمة السيارات المتوفرة ونموذج الحجز</h1>
+
+    <div id="cars-section">
+        <h2>اختر سيارتك المفضلة:</h2>
+        <table border="1" id="cars-table">
+            <thead>
+                <tr>
+                    <th>الرمز</th>
+                    <th>الموديل</th>
+                    <th>سنة الصنع</th>
+                    <th>السعر اليومي</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- السيارة الأولى -->
+                <tr id="row-CR-001">
+                    <td>CR-001</td>
+                    <td>
+                        <img src="https://placehold.co/60x40?text=Corolla" alt="Toyota Corolla" width="60" style="vertical-align: middle; margin-left: 10px;" />
+                        Toyota Corolla
+                    </td>
+                    <td>2023</td>
+                    <td>250000 ل.س</td>
+                    <td><input type="checkbox" class="detail-trigger" value="CR-001" /></td>
+                    <td><input type="checkbox" class="select-car" value="CR-001" /></td>
+                </tr>
+                <tr id="details-CR-001" class="car-details" style="display: none;">
+                    <td colspan="6">
+                        <div class="details-container">
+                            <img src="https://placehold.co/150x100?text=Corolla" alt="Toyota Corolla" width="150" />
+                            <br />
+                            <strong>التفاصيل الإضافية:</strong> نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 15,000 كم | اللون: فضي
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- السيارة الثانية -->
+                <tr id="row-CR-002">
+                    <td>CR-002</td>
+                    <td>
+                        <img src="https://placehold.co/60x40?text=Sportage" alt="Kia Sportage" width="60" style="vertical-align: middle; margin-left: 10px;" />
+                        Kia Sportage
+                    </td>
+                    <td>2022</td>
+                    <td>400000 ل.س</td>
+                    <td><input type="checkbox" class="detail-trigger" value="CR-002" /></td>
+                    <td><input type="checkbox" class="select-car" value="CR-002" /></td>
+                </tr>
+                <tr id="details-CR-002" class="car-details" style="display: none;">
+                    <td colspan="6">
+                        <div class="details-container">
+                            <img src="https://placehold.co/150x100?text=Sportage" alt="Kia Sportage" width="150" />
+                            <br />
+                            <strong>التفاصيل الإضافية:</strong> نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 30,000 كم | اللون: أسود
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- السيارة الثالثة -->
+                <tr id="row-CR-003">
+                    <td>CR-003</td>
+                    <td>
+                        <img src="https://placehold.co/60x40?text=Elantra" alt="Hyundai Elantra" width="60" style="vertical-align: middle; margin-left: 10px;" />
+                        Hyundai Elantra
+                    </td>
+                    <td>2024</td>
+                    <td>300000 ل.س</td>
+                    <td><input type="checkbox" class="detail-trigger" value="CR-003" /></td>
+                    <td><input type="checkbox" class="select-car" value="CR-003" /></td>
+                </tr>
+                <tr id="details-CR-003" class="car-details" style="display: none;">
+                    <td colspan="6">
+                        <div class="details-container">
+                            <img src="https://placehold.co/150x100?text=Elantra" alt="Hyundai Elantra" width="150" />
+                            <br />
+                            <strong>التفاصيل الإضافية:</strong> نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 5,000 كم | اللون: أبيض
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- السيارة الرابعة -->
+                <tr id="row-CR-004">
+                    <td>CR-004</td>
+                    <td>
+                        <img src="https://placehold.co/60x40?text=Spark" alt="Chevrolet Spark" width="60" style="vertical-align: middle; margin-left: 10px;" />
+                        Chevrolet Spark
+                    </td>
+                    <td>2021</td>
+                    <td>180000 ل.س</td>
+                    <td><input type="checkbox" class="detail-trigger" value="CR-004" /></td>
+                    <td><input type="checkbox" class="select-car" value="CR-004" /></td>
+                </tr>
+                <tr id="details-CR-004" class="car-details" style="display: none;">
+                    <td colspan="6">
+                        <div class="details-container">
+                            <img src="https://placehold.co/150x100?text=Spark" alt="Chevrolet Spark" width="150" />
+                            <br />
+                            <strong>التفاصيل الإضافية:</strong> نوع الوقود: بنزين | ناقل الحركة: عادي | عدد المقاعد: 4 | عداد الكيلومترات: 45,000 كم | اللون: أحمر
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- السيارة الخامسة -->
+                <tr id="row-CR-005">
+                    <td>CR-005</td>
+                    <td>
+                        <img src="https://placehold.co/60x40?text=Mazda6" alt="Mazda 6" width="60" style="vertical-align: middle; margin-left: 10px;" />
+                        Mazda 6
+                    </td>
+                    <td>2023</td>
+                    <td>350000 ل.س</td>
+                    <td><input type="checkbox" class="detail-trigger" value="CR-005" /></td>
+                    <td><input type="checkbox" class="select-car" value="CR-005" /></td>
+                </tr>
+                <tr id="details-CR-005" class="car-details" style="display: none;">
+                    <td colspan="6">
+                        <div class="details-container">
+                            <img src="https://placehold.co/150x100?text=Mazda6" alt="Mazda 6" width="150" />
+                            <br />
+                            <strong>التفاصيل الإضافية:</strong> نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 20,000 كم | اللون: رمادي
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <input type="button" id="btn-continue" value="متابعة" />
+    </div>
+
+    <hr />
+
+    <!-- قسم نموذج الحجز -->
+    <div id="booking-form-section" style="display: none;">
+        <h2>نموذج تقديم طلب الحجز الإلكتروني:</h2>
+        <form action="" method="post" id="rental-form">
+            <fieldset>
+                <legend>المعلومات الشخصية وتفاصيل الحجز</legend>
+
+                <p>
+                    <label for="full-name">الاسم الكامل (اختياري - أحرف عربية فقط):</label>
+                    <br />
+                    <input type="text" id="full-name" name="full-name" />
+                </p>
+                <p>
+                    <label for="national-id">الرقم الوطني (إلزامي - 11 خانة):</label>
+                    <br />
+                    <input type="text" id="national-id" name="national-id" maxlength="11" />
+                </p>
+
+                <p>
+                    <label for="start-date">تاريخ بداية التأجير (إلزامي - yyyy-mm-dd):</label>
+                    <br />
+                    <input type="text" id="start-date" name="start-date" placeholder="yyyy-mm-dd" />
+                </p>
+                <p>
+                    <label for="end-date">تاريخ نهاية التأجير (إلزامي - yyyy-mm-dd):</label>
+                    <br />
+                    <input type="text" id="end-date" name="end-date" placeholder="yyyy-mm-dd" />
+                </p>
+
+                <p>
+                    <label for="mobile-number">رقم الموبايل (اختياري - Syriatel أو MTN):</label>
+                    <br />
+                    <input type="text" id="mobile-number" name="mobile-number" placeholder="09xxxxxxxx" />
+                </p>
+
+                <p>
+                    <label for="email-address">البريد الإلكتروني (اختياري):</label>
+                    <br />
+                    <input type="text" id="email-address" name="email-address" />
+                </p>
+
+                <p>
+                    <input type="submit" id="btn-submit" value="إرسال الطلب" />
+                </p>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="Scripts/jquery-3.7.1.min.js"></script>
+    <script src="myFunctions.js" type="text/javascript"></script>
+</body>
+</html>
